@@ -5,7 +5,7 @@ import poseModule as pm
 import os
 os.environ["QT_LOGGING_RULES"] = "qt.qpa.fonts=false"
 
-cap = cv2.VideoCapture('videos/3.mp4')
+cap = cv2.VideoCapture(0)
 pTime = 0
 detector = pm.poseDetector()
 
