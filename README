@@ -1,0 +1,122 @@
+# Human Pose Estimation using MediaPipe and OpenCV
+
+## Overview
+
+This project implements real-time human pose estimation using **MediaPipe and OpenCV**. It detects the human body structure from a video stream and identifies key body landmarks, such as the shoulders, elbows, wrists, hips, knees, and ankles.
+
+The detected landmarks are connected to visualize the human body's skeletal structure, making it easier to understand body posture and joint positions in real time.
+
+## Features
+
+- **Real-Time Pose Detection:** Detects human body poses from a live webcam feed or video input.
+- **Body Landmark Detection:** Identifies key points across the human body using MediaPipe Pose.
+- **Skeleton Visualization:** Connects detected landmarks to represent the body's skeletal structure.
+- **Joint Tracking:** Highlights important body joints, including shoulders, elbows, wrists, hips, knees, and ankles.
+- **Visual Feedback:** Displays the detected pose directly on the video frame.
+- **Computer Vision Integration:** Uses OpenCV for video capture, image processing, and visualization.
+
+## Technologies Used
+
+- **Python** — Core programming language.
+- **MediaPipe** — Human pose landmark detection and tracking.
+- **OpenCV** — Video capture, frame processing, and visualization.
+
+## How It Works
+
+1. The program captures frames from a webcam or video source.
+2. Each frame is processed by MediaPipe Pose to detect human body landmarks.
+3. The model estimates the positions of key body points.
+4. OpenCV displays the processed frames.
+5. The detected landmarks are connected to form a skeletal representation of the human body.
+
+## Body Landmarks
+
+The system can detect landmarks associated with several body regions:
+
+| Body Region | Example Landmarks |
+|---|---|
+| Head and Face | Nose, eyes, ears |
+| Upper Body | Shoulders, elbows, wrists |
+| Torso | Left and right hips |
+| Lower Body | Knees, ankles, heels |
+| Feet | Foot index points |
+
+MediaPipe Pose provides up to 32 body landmarks, depending on the model and detection conditions.
+
+## Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/rasna902767/Pose-Estimationn/tree/main
+cd awesome.py
+```
+
+### 2. Create a Virtual Environment (Recommended)
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install opencv-python mediapipe
+```
+
+## Usage
+
+Run the Python script:
+
+```bash
+python3 awesome.py
+```
+
+Make sure your webcam is connected and accessible, and grant camera permission if required.
+
+**Note:** Replace `poseEstimmation.py` with the actual name of your Python script if it differs.
+
+## Applications
+
+Human pose estimation can be used as a foundation for:
+
+- Human activity and posture recognition.
+- Fitness and exercise tracking.
+- Gesture recognition and human-computer interaction.
+- Sports movement analysis.
+- Rehabilitation and movement monitoring.
+- Human-robot interaction and robotics perception.
+
+These are potential applications of pose estimation; they are not necessarily implemented in this project.
+
+## Future Improvements
+
+- Add joint-angle calculation to estimate body posture.
+- Implement exercise repetition counting.
+- Detect and classify basic human activities.
+- Add pose tracking and movement analysis across video frames.
+- Integrate pose estimation with robotics or gesture-controlled systems.
+
+## Learning Outcomes
+
+Through this project, I explored:
+
+- Real-time computer vision using OpenCV.
+- Human pose landmark detection with MediaPipe.
+- Processing webcam frames using Python.
+- Visualizing body joints and skeletal connections.
+- Practical applications of computer vision in motion analysis and robotics.
+
+## Acknowledgements
+
+- [MediaPipe](https://ai.google.dev/edge/mediapipe/solutions/vision/pose_landmarker)
+- [OpenCV Documentation](https://docs.opencv.org/)
+
+---
+
+**Author:** Rasna Gupta
+
+**Project:** Human Pose Estimation using MediaPipe and OpenCV
+
+**Status:** Initial implementation
